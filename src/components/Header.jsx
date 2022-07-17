@@ -141,7 +141,7 @@ function Header() {
 
             {/* mobile */}
             <div className=" flex md:hidden w-full h-full items-center justify-between ">
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center" onClick={handleShowCart}>
                     <HiShoppingBag className="text-textColor text-2xl mt-[-6px] cursor-pointer z-10" />
                     {cartItems && cartItems.length > 0 && (
                         <div className="absolute -top-2.5 -right-2 w-4 h-4 rounded-xl bg-cartNumBg flex items-center justify-center">
